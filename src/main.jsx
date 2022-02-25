@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import blah from './blah'
-
-
-const MYVALUE = "SEAN"
+import Blah from './Blah'
 
 ReactDOM.render(
   <React.StrictMode>
-    <blah />
+      <Blah />
   </React.StrictMode>,
 
   document.getElementById('root')

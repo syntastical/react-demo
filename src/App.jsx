@@ -4,11 +4,7 @@ import './App.css'
 
 
 function App(props) {
-  const [count, setCount] = useState(0)
-  const [something, setSomething] = useState({x:1, y:2})
-
-  let {value1, user} = props;
-
+  let {value1} = props;
 
   return (
     <div className="App">
@@ -16,11 +12,8 @@ function App(props) {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Sean + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
+            count is: {value1}
         </p>
-        <p>{value1}{user}</p>
         <p>
           Edit <code>App.jsx</code> and save to test HMR updates.
         </p>
@@ -46,14 +39,6 @@ function App(props) {
       </header>
     </div>
   )
-}
-
-async function x() {
-  /*
-  async api call
-  response back
-  setSomething({x:345})
-   */
 }
 
 export default App
