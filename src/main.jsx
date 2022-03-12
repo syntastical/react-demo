@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import Blah from './Blah'
+import Router from "./Router";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Blah />
+      <Router />
   </React.StrictMode>,
 
   document.getElementById('root')

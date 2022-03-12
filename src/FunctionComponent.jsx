@@ -1,12 +1,13 @@
 import { useState } from 'react'
 import App from './App'
 
-export default function blah(props) {
+export default (props) => {
     const [count1, setCount1] = useState(0)
     const [count2, setCount2] = useState(0)
 
     return(
         <div>
+            Function
             <button type="button" onClick={() => setCount1((count) => count + 1)}>
                 count is: {count1}
             </button>
